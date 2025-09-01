@@ -1,0 +1,32 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'Sri Manikyamba Restaurant - Taste the Tradition, Savor the Fusion',
+  description: 'Experience authentic Indian cuisine and popular Chinese dishes at Sri Manikyamba Restaurant. Order online, make reservations, and discover our fusion of flavors.',
+  keywords: 'restaurant, Indian food, Chinese food, fusion cuisine, Hyderabad, delivery, takeout',
+  authors: [{ name: 'Sri Manikyamba Restaurant' }],
+  openGraph: {
+    title: 'Sri Manikyamba Restaurant',
+    description: 'Taste the Tradition, Savor the Fusion',
+    type: 'website',
+    locale: 'en_US',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        {children}
+      </body>
+    </html>
+  )
+} 
