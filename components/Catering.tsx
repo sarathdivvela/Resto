@@ -75,9 +75,9 @@ export default function Catering() {
                 <Phone className="w-5 h-5 text-primary-600" />
                 <span className="text-gray-800">Call: 9392333733</span>
               </a>
-              <a href="mailto:srimanikyambarestaurant@gmail.com?subject=Catering%20Inquiry&body=Hello%2C%20I%27d%20like%20to%20book%20catering.%20Event%20date%3A%20%5Bdd-mm-yyyy%5D%2C%20Guests%3A%20%5Bnumber%5D%2C%20Notes%3A%20%5Bany%5D." className="flex items-center gap-3 p-3 rounded-lg border hover:border-primary-300 hover:bg-primary-50 transition-colors">
+              <a href="mailto:srimanikyambarestaurant@gmail.com?subject=Catering%20Inquiry&body=Hello%2C%20I%27d%20like%20to%20book%20catering.%20Event%20date%3A%20%5Bdd-mm-yyyy%5D%2C%20Guests%3A%20%5Bnumber%5D%2C%20Notes%3A%20%5Bany%5D." className="flex items-center gap-3 p-3 rounded-lg border hover:border-primary-300 hover:bg-primary-50 transition-colors min-w-0">
                 <Mail className="w-5 h-5 text-primary-600" />
-                <span className="text-gray-800">Email: srimanikyambarestaurant@gmail.com</span>
+                <span className="text-gray-800 break-all">Email: srimanikyambarestaurant@gmail.com</span>
               </a>
               <a href="#contact" className="flex items-center gap-3 p-3 rounded-lg border hover:border-primary-300 hover:bg-primary-50 transition-colors">
                 <CalendarCheck2 className="w-5 h-5 text-primary-600" />
