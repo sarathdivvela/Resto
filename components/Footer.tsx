@@ -22,8 +22,16 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container-custom py-16">
+    <footer className="relative text-white overflow-hidden">
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black animate-[gradientShift_12s_ease_infinite] opacity-95" />
+
+      {/* Top wave divider */}
+      <svg className="absolute -top-6 left-0 right-0 w-full h-8 text-gray-900" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0,32 C240,64 480,0 720,16 C960,32 1200,64 1440,24 L1440,0 L0,0 Z" />
+      </svg>
+
+      <div className="relative container-custom py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Restaurant Info */}
           <motion.div
@@ -155,27 +163,31 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar */
+        }
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="border-t border-gray-800 mt-12 pt-8"
+          className="border-t border-white/10 mt-12 pt-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © {currentYear} Sri Manikyamba Restaurant. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="mailto:srimanikyambarestaurant@gmail.com" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
-                Email Us
+            <div className="flex space-x-6 mt-4 md:mt-0 items-center">
+              <a href="mailto:srimanikyambarestaurant@gmail.com" className="text-gray-400 hover:text-primary-400 text-sm transition-colors min-w-0">
+                <span className="break-all">Email Us</span>
               </a>
               <a href="tel:9392333733" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
                 Call
               </a>
               <a href="https://maps.google.com/?q=16.678015,82.163279" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
                 Find Us
+              </a>
+              <a href="#home" className="ml-2 text-gray-300 hover:text-white text-sm underline-offset-4 hover:underline transition-colors">
+                Back to top ↑
               </a>
             </div>
           </div>

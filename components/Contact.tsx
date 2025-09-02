@@ -107,12 +107,12 @@ export default function Contact() {
                     <h4 className="font-semibold text-gray-900 text-sm sm:text-base">{info.title}</h4>
                     <a
                       href={info.link}
-                      className="text-gray-600 hover:text-primary-600 transition-colors text-sm sm:text-base break-words inline-flex items-center gap-2"
+                      className="text-gray-600 hover:text-primary-600 transition-colors text-sm sm:text-base break-words inline-flex items-center gap-2 min-w-0"
                     >
                       {info.title === 'Email' && (
                         <Mail className="w-4 h-4 text-primary-600" />
                       )}
-                      <span>{info.value}</span>
+                      <span className="break-all">{info.value}</span>
                     </a>
                   </div>
                 </motion.div>
