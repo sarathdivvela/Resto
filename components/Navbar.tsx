@@ -44,9 +44,11 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }: NavbarProps) {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2 sm:space-x-3"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm sm:text-lg">S</span>
-            </div>
+            <img
+              src="/public/images/logo.jpg"
+              alt="Sri Manikyamba Logo"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
+            />
             <div className="hidden sm:block">
               <h1 className={`text-lg sm:text-xl lg:text-2xl font-display font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
                 Sri Manikyamba
