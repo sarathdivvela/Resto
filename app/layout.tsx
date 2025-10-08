@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
   },
   icons: {
-    icon: '/images/icon.jpg',
-    apple: '/images/icon.jpg',
+    icon: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
   },
 }
 
