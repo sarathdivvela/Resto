@@ -43,7 +43,7 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-2 mb-6">
               <img
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="Sri Manikyamba Logo"
                 className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
               />
