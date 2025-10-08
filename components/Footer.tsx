@@ -42,9 +42,11 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Sri Manikyamba Logo"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
+              />
               <div>
                 <h3 className="text-xl font-display font-bold">Sri Manikyamba</h3>
                 <p className="text-sm text-gray-400">Restaurant</p>
