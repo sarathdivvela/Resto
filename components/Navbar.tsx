@@ -45,7 +45,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }: NavbarProps) {
             className="flex items-center space-x-2 sm:space-x-3"
           >
             <img
-              src="/public/images/logo.jpg"
+              src="/images/logo.jpg"
               alt="Sri Manikyamba Logo"
               className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
             />
